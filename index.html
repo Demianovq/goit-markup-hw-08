@@ -113,7 +113,7 @@
 				<div class="container">
 					<h2 class="visually-hidden">Наша робота</h2>
 					<ul class="rules-list">
-						<li>
+						<li class="rules-list__item">
 							<div class="decor-container">
 								<svg class="decor-container__icon" width="70" height="70">
 									<use href="./images/icons.svg/icons.svg#icon-antenna-1"></use>
@@ -122,7 +122,7 @@
 							<h3 class="rules-list__title">Увага до деталей</h3>
 							<p class="rules-list__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
 						</li>
-						<li>
+						<li class="rules-list__item">
 							<div class="decor-container">
 								<svg class="decor-container__icon" width="70" height="70">
 									<use href="./images/icons.svg/icons.svg#icon-clock-1"></use>
@@ -131,7 +131,7 @@
 							<h3 class="rules-list__title">Пунктуальність</h3>
 							<p class="rules-list__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
 						</li>
-						<li>
+						<li class="rules-list__item">
 							<div class="decor-container">
 								<svg class="decor-container__icon" width="70" height="70">
 									<use href="./images/icons.svg/icons.svg#icon-diagram-1"></use>
@@ -140,7 +140,7 @@
 							<h3 class="rules-list__title">Планування</h3>
 							<p class="rules-list__text">Так само консультація з широким активом значною мірою зумовлює.</p>
 						</li>
-						<li>
+						<li class="rules-list__item">
 							<div class="decor-container">
 								<svg class="decor-container__icon" width="70" height="70">
 									<use href="./images/icons.svg/icons.svg#icon-astronaut-1"></use>
@@ -384,56 +384,58 @@
 		</main>
 		<footer class="footer">
 			<div class="container stylefooter-block">
-				<div class="info-block">
-					<a href="./index.html" class="footer-logo">
-						Web
-						<span class="footer-logo__second">Studio</span>
-					</a>
+				<div class="tablet">
+					<div class="info-block">
+						<a href="./index.html" class="footer-logo">
+							Web
+							<span class="footer-logo__second">Studio</span>
+						</a>
 
-					<address>
-						<ul class="address-list">
-							<li class="address-list__item">
-								<a href="https://goo.gl/maps/oQ1zAfRvta3EiJCr7" target="_blank" rel="noopener, nofollow" class="address-list__link">м. Київ, пр-т Лесі Українки, 26</a>
+						<address>
+							<ul class="address-list">
+								<li class="address-list__item">
+									<a href="https://goo.gl/maps/oQ1zAfRvta3EiJCr7" target="_blank" rel="noopener, nofollow" class="address-list__link">м. Київ, пр-т Лесі Українки, 26</a>
+								</li>
+								<li class="address-list__item">
+									<a href="mailto:info@devstudio.com" class="contacts-list__link">info@devstudio.com</a>
+								</li>
+								<li class="address-list__item"><a href="tel:+380961111111" class="contacts-list__link">+380961111111</a></li>
+							</ul>
+						</address>
+					</div>
+					<div class="company-block">
+						<h3 class="company-block__title">Приєднуйтесь</h3>
+						<ul class="social-list">
+							<li>
+								<a class="social-list__link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+									<svg class="social-list__icon" width="20" height="20">
+										<use href="./images/icons.svg/icons.svg#icon-instagram"></use>
+									</svg>
+								</a>
 							</li>
-							<li class="address-list__item">
-								<a href="mailto:info@devstudio.com" class="contacts-list__link">info@devstudio.com</a>
+							<li>
+								<a class="social-list__link" href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+									<svg class="social-list__icon" width="20" height="20">
+										<use href="./images/icons.svg/icons.svg#icon-twitter"></use>
+									</svg>
+								</a>
 							</li>
-							<li class="address-list__item"><a href="tel:+380961111111" class="contacts-list__link">+380961111111</a></li>
+							<li>
+								<a class="social-list__link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+									<svg class="social-list__icon" width="20" height="20">
+										<use href="./images/icons.svg/icons.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a class="social-list__link" href="https://ua.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
+									<svg class="social-list__icon" width="20" height="20">
+										<use href="./images/icons.svg/icons.svg#icon-linkedin"></use>
+									</svg>
+								</a>
+							</li>
 						</ul>
-					</address>
-				</div>
-				<div class="company-block">
-					<h3 class="company-block__title">Приєднуйтесь</h3>
-					<ul class="social-list">
-						<li>
-							<a class="social-list__link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-								<svg class="social-list__icon" width="20" height="20">
-									<use href="./images/icons.svg/icons.svg#icon-instagram"></use>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a class="social-list__link" href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-								<svg class="social-list__icon" width="20" height="20">
-									<use href="./images/icons.svg/icons.svg#icon-twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a class="social-list__link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-								<svg class="social-list__icon" width="20" height="20">
-									<use href="./images/icons.svg/icons.svg#icon-facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a class="social-list__link" href="https://ua.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
-								<svg class="social-list__icon" width="20" height="20">
-									<use href="./images/icons.svg/icons.svg#icon-linkedin"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
+					</div>
 				</div>
 
 				<div class="subscribe-block">
@@ -453,11 +455,6 @@
 				</div>
 			</div>
 		</footer>
-		<div class="block">
-			<a href="" class="link"></a>
-			<span class="text"></span>
-			<form action="" class="form"></form>
-		</div>
 		<script src="./js/modal.js"></script>
 	</body>
 </html>

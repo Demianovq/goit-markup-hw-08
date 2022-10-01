@@ -1,15 +1,31 @@
 .rules-sect {
 	padding: 94px 0;
+	@media screen and (max-width: 1199px) {
+		padding: 60px 0;
+	}
 }
 
 .rules-list__title {
 	font-weight: 700;
+	font-size: 14px;
 	line-height: calc(16 / 14);
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--main-color);
+
 	margin-bottom: 10px;
-	font-size: 14px;
+
+	@media screen and (max-width: 767px) {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	@media screen and (min-width: 768px) {
+	}
+
+	@media screen and (min-width: 1200px) {
+	}
 }
 
 .rules-list__text {
@@ -18,17 +34,53 @@
 
 .rules-list {
 	list-style: none;
-	display: flex;
-	gap: 30px;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+
+		gap: 30px;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		flex-wrap: wrap;
+	}
+}
+
+.rules-list__item {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		width: 354px;
+	}
+}
+
+.rules-list__item:not(:last-child) {
+	@media screen and (max-width: 767px) {
+		margin-bottom: 30px;
+	}
 }
 
 .decor-container {
-	width: 270px;
 	height: 120px;
 	background-color: var(--bg-sect-color);
 	margin-bottom: 30px;
+	width: 450px;
+
+	@media screen and (min-width: 768px) {
+		width: 354px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 270px;
+	}
 }
 
 .decor-container__icon {
-	margin: 25px 100px;
+	margin: 25px 190px;
+
+	@media screen and (min-width: 768px) {
+		margin: 25px 142px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin: 25px 100px;
+	}
 }

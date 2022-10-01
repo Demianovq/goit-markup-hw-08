@@ -1,13 +1,28 @@
 .main-sect {
-	padding: 94px 0;
+	padding: 60px 0;
+	@media screen and (min-width: 1200px) {
+		padding: 94px 0;
+	}
 }
 
 .nav-projects-list {
 	list-style: none;
-	display: flex;
 	margin-bottom: 50px;
+	display: flex;
 	gap: 8px;
-	justify-content: center;
+
+	@media screen and (max-width: 767px) {
+		flex-wrap: wrap;
+	}
+	@media screen and (min-width: 768px) {
+		justify-content: center;
+	}
+}
+
+.order {
+	@media screen and (max-width: 767px) {
+		order: 1;
+	}
 }
 
 .nav-projects-btn {

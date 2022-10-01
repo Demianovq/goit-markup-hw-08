@@ -50,17 +50,17 @@
 				<div class="container">
 					<h1 class="visually-hidden">Наші проекти</h1>
 					<ul class="nav-projects-list">
-						<li><button type="button" class="nav-projects-btn">Усі</button></li>
-						<li>
+						<li class="nav-projects-list__item"><button type="button" class="nav-projects-btn">Усі</button></li>
+						<li class="nav-projects-list__item">
 							<button type="button" class="nav-projects-btn">Веб-сайти</button>
 						</li>
-						<li>
+						<li class="nav-projects-list__item">
 							<button type="button" class="nav-projects-btn">Додатки</button>
 						</li>
-						<li>
+						<li class="nav-projects-list__item order">
 							<button type="button" class="nav-projects-btn">Дизайн</button>
 						</li>
-						<li>
+						<li class="nav-projects-list__item">
 							<button type="button" class="nav-projects-btn">Маркетинг</button>
 						</li>
 					</ul>
@@ -74,7 +74,7 @@
 									</div>
 								</div>
 
-								<div class="projects-block">
+								<div class="projects-block size-decor">
 									<h2 class="projects-block__title">Технокряк</h2>
 									<p class="projects-block__text">Веб-сайт</p>
 								</div>
@@ -199,56 +199,58 @@
 		</main>
 		<footer class="footer">
 			<div class="container stylefooter-block">
-				<div class="info-block">
-					<a href="./index.html" class="footer-logo">
-						Web
-						<span class="footer-logo__second">Studio</span>
-					</a>
+				<div class="tablet">
+					<div class="info-block">
+						<a href="./index.html" class="footer-logo">
+							Web
+							<span class="footer-logo__second">Studio</span>
+						</a>
 
-					<address>
-						<ul class="address-list">
-							<li class="address-list__item">
-								<a href="https://goo.gl/maps/oQ1zAfRvta3EiJCr7" target="_blank" rel="noopener, nofollow" class="address-list__link">м. Київ, пр-т Лесі Українки, 26</a>
+						<address>
+							<ul class="address-list">
+								<li class="address-list__item">
+									<a href="https://goo.gl/maps/oQ1zAfRvta3EiJCr7" target="_blank" rel="noopener, nofollow" class="address-list__link">м. Київ, пр-т Лесі Українки, 26</a>
+								</li>
+								<li class="address-list__item">
+									<a href="mailto:info@devstudio.com" class="contacts-list__link">info@devstudio.com</a>
+								</li>
+								<li class="address-list__item"><a href="tel:+380961111111" class="contacts-list__link">+380961111111</a></li>
+							</ul>
+						</address>
+					</div>
+					<div class="company-block">
+						<h3 class="company-block__title">Приєднуйтесь</h3>
+						<ul class="social-list">
+							<li>
+								<a class="social-list__link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+									<svg class="social-list__icon" width="20" height="20">
+										<use href="./images/icons.svg/icons.svg#icon-instagram"></use>
+									</svg>
+								</a>
 							</li>
-							<li class="address-list__item">
-								<a href="mailto:info@devstudio.com" class="contacts-list__link">info@devstudio.com</a>
+							<li>
+								<a class="social-list__link" href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+									<svg class="social-list__icon" width="20" height="20">
+										<use href="./images/icons.svg/icons.svg#icon-twitter"></use>
+									</svg>
+								</a>
 							</li>
-							<li class="address-list__item"><a href="tel:+380961111111" class="contacts-list__link">+380961111111</a></li>
+							<li>
+								<a class="social-list__link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+									<svg class="social-list__icon" width="20" height="20">
+										<use href="./images/icons.svg/icons.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a class="social-list__link" href="https://ua.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
+									<svg class="social-list__icon" width="20" height="20">
+										<use href="./images/icons.svg/icons.svg#icon-linkedin"></use>
+									</svg>
+								</a>
+							</li>
 						</ul>
-					</address>
-				</div>
-				<div class="company-block">
-					<h3 class="company-block__title">Приєднуйтесь</h3>
-					<ul class="social-list">
-						<li>
-							<a class="social-list__link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-								<svg class="social-list__icon" width="20" height="20">
-									<use href="./images/icons.svg/icons.svg#icon-instagram"></use>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a class="social-list__link" href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-								<svg class="social-list__icon" width="20" height="20">
-									<use href="./images/icons.svg/icons.svg#icon-twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a class="social-list__link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-								<svg class="social-list__icon" width="20" height="20">
-									<use href="./images/icons.svg/icons.svg#icon-facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a class="social-list__link" href="https://ua.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
-								<svg class="social-list__icon" width="20" height="20">
-									<use href="./images/icons.svg/icons.svg#icon-linkedin"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
+					</div>
 				</div>
 
 				<div class="subscribe-block">
