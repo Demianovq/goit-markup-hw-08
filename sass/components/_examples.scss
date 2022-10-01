@@ -1,0 +1,40 @@
+.work-section {
+	padding-bottom: 94px;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: calc(42 / 36);
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--main-color);
+}
+
+.work-list {
+	list-style: none;
+	display: flex;
+	gap: 30px;
+	margin-top: 50px;
+}
+.work-list__item {
+	z-index: -1;
+	width: 370px;
+	position: relative;
+}
+
+.work-list__text {
+	font-weight: 700;
+	line-height: calc(16 / 14);
+	text-transform: uppercase;
+	color: var(--light-color);
+
+	position: absolute;
+	background: rgba(47, 48, 58, 0.8);
+	width: 100%;
+	height: 70px;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

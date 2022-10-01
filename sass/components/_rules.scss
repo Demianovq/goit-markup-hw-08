@@ -1,0 +1,34 @@
+.rules-sect {
+	padding: 94px 0;
+}
+
+.rules-list__title {
+	font-weight: 700;
+	line-height: calc(16 / 14);
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--main-color);
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.rules-list__text {
+	line-height: 1.71;
+}
+
+.rules-list {
+	list-style: none;
+	display: flex;
+	gap: 30px;
+}
+
+.decor-container {
+	width: 270px;
+	height: 120px;
+	background-color: var(--bg-sect-color);
+	margin-bottom: 30px;
+}
+
+.decor-container__icon {
+	margin: 25px 100px;
+}
