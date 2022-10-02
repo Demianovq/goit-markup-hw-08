@@ -4,24 +4,44 @@
 	margin-right: auto;
 	background-repeat: no-repeat;
 	background-position: center;
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imagesteam/header_mob.jpg);
-		max-width: 480px;
-		max-height: 400px;
-		padding: 130px 0;
-	
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imagesteam/imgheader/header_mob.jpg);
+	max-width: 480px;
+	max-height: 400px;
+	padding: 130px 0;
 
 	@media screen and (min-width: 768px) {
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imagesteam/header_tab.jpg);
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imagesteam/imgheader/header_tab.jpg);
 		max-width: 768px;
 		max-height: 400px;
 	}
 
 	@media screen and (min-width: 1200px) {
 		padding: 200px 0;
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imagesteam/imgheader.jpg);
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imagesteam/imgheader/header_dek.jpg);
 		background-size: cover;
 		max-width: 1600px;
 		max-height: 600px;
+	}
+}
+
+@media screen and (max-width: 767px), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+	.hero {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imagesteam/imgheader/headermob_@2x.jpg);
+		background-size: cover;
+	}
+}
+
+@media screen and (max-width: 1199px), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+	.hero {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imagesteam/imgheader/headertab_@2x.jpg);
+		background-size: cover;
+	}
+}
+
+@media screen and (min-width: 1200px), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+	.hero {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imagesteam/imgheader/headerdek_@2x.jpg);
+		background-size: cover;
 	}
 }
 

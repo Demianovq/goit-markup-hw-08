@@ -5,7 +5,13 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Ukraine</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
@@ -158,17 +164,27 @@
 					<h2 class="title">Чим ми займаємося</h2>
 					<ul class="work-list">
 						<li class="work-list__item">
-							<img src="./images/box1.jpg" alt="Процесс кодинга с помощью разных девайсов" width="370" />
+							<img
+								srcset="/images/imagesteam/work/box1.jpg 1x, /images/imagesteam/work/box1_@2x.jpg 2x"
+								src="./images/imagesteam/work/box1.jpg"
+								alt="Процесс кодинга с помощью разных девайсов"
+								width="370"
+							/>
 
 							<p class="work-list__text">Декстопні додатки</p>
 						</li>
 						<li class="work-list__item">
-							<img src="./images/box2.jpg" alt="Использование телефона и ноутбука в работе" width="370" />
+							<img
+								srcset="/images/imagesteam/work/box2.jpg 1x, /images/imagesteam/work/box2_@2x.jpg 2x"
+								src="./images/imagesteam/work/box2.jpg"
+								alt="Использование телефона и ноутбука в работе"
+								width="370"
+							/>
 
 							<p class="work-list__text">Мобільні додатки</p>
 						</li>
 						<li class="work-list__item">
-							<img src="./images/box3.jpg" alt="Иллюстрация дизайна на планшете" width="370" />
+							<img srcset="/images/imagesteam/work/box3.jpg 1x, /images/imagesteam/work/box3_@2x.jpg 2x" src="./images/imagesteam/work/box3.jpg" alt="Иллюстрация дизайна на планшете" width="370" />
 
 							<p class="work-list__text">Дизайнерські рішення</p>
 						</li>
@@ -181,7 +197,12 @@
 					<h2 class="title">Наша команда</h2>
 					<ul class="team-list">
 						<li class="team-list__item">
-							<img src="./images/imagesteam/img1.jpg" alt="Участник команды мужчина в красной рубашке" width="270" />
+							<picture>
+								<source srcset="./images/imagesteam/team/person1dek.jpg 1x, ./images/imagesteam/team/person1dek_@2x.jpg 2x" media="(min-width: 1200px)" />
+								<source srcset="./images/imagesteam/team/person1tab.jpg 1x, ./images/imagesteam/team/person1tab_@2x.jpg 2x" media="(min-width: 768px)" />
+								<source srcset="./images/imagesteam/team/person1.jpg 1x, ./images/imagesteam/team/person1_@2x.jpg 2x" media="(max-width: 767px)" />
+								<img src="./images/imagesteam/team/person1.jpg" alt="Участник команды мужчина" />
+							</picture>
 							<div class="team-block">
 								<h3 class="team-block_title">Ігор Дем'яненко</h3>
 								<p class="team-block_text">Product Designer</p>
@@ -219,7 +240,12 @@
 						</li>
 
 						<li class="team-list__item">
-							<img src="./images/imagesteam/img2.jpg" alt="Участник команды девушка в пиджаке" width="270" />
+							<picture>
+								<source srcset="./images/imagesteam/team/person2dek.jpg 1x, ./images/imagesteam/team/person2dek_@2x.jpg 2x" media="(min-width: 1200px)" />
+								<source srcset="./images/imagesteam/team/person2tab.jpg 1x, ./images/imagesteam/team/person2tab_@2x.jpg 2x" media="(min-width: 768px)" />
+								<source srcset="./images/imagesteam/team/person2.jpg 1x, ./images/imagesteam/team/person2_@2x.jpg 2x" media="(max-width: 767px)" />
+								<img src="./images/imagesteam/team/person2.jpg" alt="Участник команды девушка в пиджаке" />
+							</picture>
 							<div class="team-block">
 								<h3 class="team-block_title">Ольга Рєпіна</h3>
 								<p class="team-block_text">Frontend Developer</p>
@@ -256,7 +282,12 @@
 							</div>
 						</li>
 						<li class="team-list__item">
-							<img src="./images/imagesteam/img3.jpg" alt="Участник команды мужчина в синей рубашке" width="270" />
+							<picture>
+								<source srcset="./images/imagesteam/team/person3dek.jpg 1x, ./images/imagesteam/team/person3dek_@2x.jpg 2x" media="(min-width: 1200px)" />
+								<source srcset="./images/imagesteam/team/person3tab.jpg 1x, ./images/imagesteam/team/person3tab_@2x.jpg 2x" media="(min-width: 768px)" />
+								<source srcset="./images/imagesteam/team/person3.jpg 1x, ./images/imagesteam/team/person3_@2x.jpg 2x" media="(max-width: 767px)" />
+								<img src="./images/imagesteam/team/person3.jpg" alt="Участник команды мужчина в рубашке" />
+							</picture>
 							<div class="team-block">
 								<h3 class="team-block_title">Микола Тарасов</h3>
 								<p class="team-block_text">Marketing</p>
@@ -293,7 +324,12 @@
 							</div>
 						</li>
 						<li class="team-list__item">
-							<img src="./images/imagesteam/img4.jpg" alt="Участник команды мужчина в чёрной футболке" width="270" />
+							<picture>
+								<source srcset="./images/imagesteam/team/person4dek.jpg 1x, ./images/imagesteam/team/person4dek_@2x.jpg 2x" media="(min-width: 1200px)" />
+								<source srcset="./images/imagesteam/team/person4tab.jpg 1x, ./images/imagesteam/team/person4tab_@2x.jpg 2x" media="(min-width: 768px)" />
+								<source srcset="./images/imagesteam/team/person4.jpg 1x, ./images/imagesteam/team/person4_@2x.jpg 2x" media="(max-width: 767px)" />
+								<img src="./images/imagesteam/team/person4.jpg" alt="Участник команды мужчина в футболке" />
+							</picture>
 							<div class="team-block">
 								<h3 class="team-block_title">Михайло Єрмаков</h3>
 								<p class="team-block_text">UI Designer</p>
