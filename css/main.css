@@ -342,6 +342,12 @@ summary {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 
 .btn-close {
   position: absolute;
@@ -491,6 +497,9 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -511,14 +520,30 @@ summary {
   opacity: 1;
 }
 
+.modal-checkbox__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .modal-checkbox__text {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+}
+
 .modal-btn {
   display: block;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   width: 200px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background: var(--accent-color);
   color: var(--light-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -535,6 +560,16 @@ summary {
 
 .modal-link {
   color: var(--accent-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .modal-link {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
 }
 
 .header-thumb {
@@ -558,9 +593,21 @@ summary {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+@media screen and (max-width: 1199px) {
+  .header-logo {
+    font-size: 24px;
+    line-height: 1.1666666667;
+  }
+}
 
 .header-logo__text {
   color: var(--dark-color);
+}
+@media screen and (max-width: 1199px) {
+  .header-logo__text {
+    font-size: 24px;
+    line-height: 1.1666666667;
+  }
 }
 
 .nav-list {
@@ -614,18 +661,37 @@ summary {
   background-color: var(--accent-color);
   border-radius: 2px;
 }
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .nav-list__link.current::after {
+    bottom: 3%;
+  }
+}
 
 .nav {
   margin-left: 93px;
 }
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .nav {
+    margin-left: 87px;
+  }
+}
 
 .contacts-list {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
   gap: 50px;
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .contacts-list {
+    margin-left: 96px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contacts-list__item {
@@ -636,11 +702,21 @@ summary {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-  margin-right: 20px;
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .contacts-list__item:first-child {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list__item {
+    margin-right: 20px;
+  }
 }
 
 .contacts-list__link {
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -663,6 +739,12 @@ summary {
     display: flex;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-list__link {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 
 .contacts-list__icon {
   fill: currentColor;
@@ -670,6 +752,11 @@ summary {
 }
 .contacts-list__icon:hover, .contacts-list__icon:focus {
   fill: var(--accent-color);
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .contacts-list__icon {
+    margin-right: 8px;
+  }
 }
 
 .header-portfolio {
@@ -1519,8 +1606,8 @@ address {
 
 .projects-block__title {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  font-size: 17px;
+  line-height: 2.1176470588;
   letter-spacing: 0.06em;
   color: var(--main-color);
   margin-bottom: 4px;
