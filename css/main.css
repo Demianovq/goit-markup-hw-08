@@ -342,7 +342,7 @@ summary {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -526,7 +526,7 @@ summary {
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
 }
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .modal-checkbox__text {
     font-size: 12px;
     line-height: 1.1666666667;
@@ -565,11 +565,51 @@ summary {
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
 }
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .modal-link {
     font-size: 12px;
     line-height: 1.1666666667;
   }
+}
+
+.menu-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: var(--light-color);
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+.mobile-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.menu-container.js-menu-container {
+  display: none;
+}
+
+.menu-container.js-menu-container.is-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: block;
 }
 
 .header-thumb {
@@ -616,6 +656,11 @@ summary {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
+}
+@media screen and (max-width: 767px) {
+  .nav-list {
+    display: none;
+  }
 }
 
 .nav-list__link {
@@ -679,6 +724,11 @@ summary {
 .contacts-list {
   list-style: none;
   gap: 50px;
+}
+@media screen and (max-width: 767px) {
+  .contacts-list {
+    display: none;
+  }
 }
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .contacts-list {
