@@ -382,7 +382,7 @@ summary {
 
 .btn-close__icon {
   display: block;
-  fill: var(--dark-color);
+  fill: var(--main-color);
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
