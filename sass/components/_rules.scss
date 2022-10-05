@@ -64,6 +64,12 @@
   margin-bottom: 30px;
   max-width: 450px;
 
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   @media screen and (min-width: 768px) {
     width: 354px;
   }
@@ -74,7 +80,8 @@
 }
 
 .decor-container__icon {
-  margin: 25px 190px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 
   @media screen and (min-width: 768px) {
     margin: 25px 142px;
