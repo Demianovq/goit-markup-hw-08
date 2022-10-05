@@ -59,6 +59,16 @@
             </a>
           </li>
         </ul>
+        <button
+          type="button"
+          class="menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-icon">
+            <use href="./images/icons.svg/icons.svg#mob-open-button"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -493,6 +503,55 @@
             </li>
           </ul>
         </div>
+        <div class="js-menu-container" id="mobile-menu">
+          <button class="js-close-menu">
+            <svg class="js-close-menu__icon">
+              <use href="./images/icons.svg/icons.svg#mob-close-button"></use>
+            </svg>
+          </button>
+          <ul class="modal-nav">
+            <li class="modal-nav__item">
+              <a href="./index.html" class="modal-nav__link">Студія</a>
+            </li>
+            <li class="modal-nav__item">
+              <a href="./portfolio.html" class="modal-nav__link">Портфоліо</a>
+            </li>
+            <li class="modal-nav__item">
+              <a href="./portfolio.html" class="modal-nav__link">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="contacts-mob-list">
+            <li class="contacts-mob-list__link">
+              <a href="tel:+380961111111" class="first-mob-link">
+                +380961111111
+              </a>
+            </li>
+            <li class="contacts-mob-list__link">
+              <a href="mailto:info@devstudio.com" class="second-mob-link">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="soc-list">
+            <li>
+              <a href="https://www.instagram.com" class="soc-list__link"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://twitter.com" class="soc-list__link">Twitter</a>
+            </li>
+            <li>
+              <a href="https://facebook.com" class="soc-list__link">Facebook</a>
+            </li>
+            <li>
+              <a href="https://ua.linkedin.com" class="soc-list__linkedin"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -618,5 +677,12 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
