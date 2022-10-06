@@ -81,6 +81,7 @@
 .hero__title {
   display: block;
   font-family: "Roboto";
+  width: 300px;
   font-style: normal;
   font-weight: 900;
   line-height: calc(60 / 44);
@@ -91,10 +92,11 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 480px) {
     font-size: 26px;
     width: 360px;
   }
+
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     width: 696px;
