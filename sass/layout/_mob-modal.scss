@@ -17,28 +17,34 @@
 }
 
 .js-menu-container {
-  display: flex;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  padding: 48px 40px;
-  position: fixed;
-  visibility: hidden;
-  z-index: 1000;
-  transform: translateX(100%);
-  transition-property: transform visibility;
-  transition-duration: 400ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &.is-open {
+  @media screen and (max-width: 767px) {
+    display: flex;
     top: 0%;
     left: 0%;
     width: 100%;
     height: 100%;
-    visibility: visible;
-    background-color: var(--light-color);
-    transform: translateX(0%);
+    flex-direction: column;
+    padding: 48px 40px;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition-property: transform visibility;
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &.is-open {
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background-color: var(--light-color);
+      transform: translateX(0%);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
