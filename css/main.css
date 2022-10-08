@@ -798,7 +798,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .company-block {
-    margin-left: 70px;
+    margin-left: 100px;
   }
 }
 
@@ -832,11 +832,6 @@ address {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    margin-left: 76px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .info-block {
     margin-left: 76px;
   }
 }
