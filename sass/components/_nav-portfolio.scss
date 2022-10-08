@@ -1,50 +1,52 @@
 .main-sect {
-	padding: 60px 0;
-	@media screen and (min-width: 1200px) {
-		padding: 94px 0;
-	}
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .nav-projects-list {
-	list-style: none;
-	margin-bottom: 50px;
-	display: flex;
-	gap: 8px;
+  list-style: none;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 8px;
 
-	@media screen and (max-width: 767px) {
-		flex-wrap: wrap;
-	}
-	@media screen and (min-width: 768px) {
-		justify-content: center;
-	}
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .order {
-	@media screen and (max-width: 767px) {
-		order: 1;
-	}
+  @media screen and (max-width: 767px) {
+    order: 1;
+  }
 }
 
 .nav-projects-btn {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: calc(26 / 16);
-	text-align: center;
-	letter-spacing: 0.03em;
-	color: var(--main-color);
-	background-color: var(--bg-sect-color);
-	cursor: pointer;
-	border: none;
-	border-radius: 4px;
-	padding: 6px 22px;
-	transition-property: color, background-color, box-shadow;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	&:hover,
-	&:focus {
-		background-color: var(--accent-color);
-		color: var(--light-color);
-		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-		border-radius: 4px;
-	}
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  background-color: var(--bg-sect-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
 }

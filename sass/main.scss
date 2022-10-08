@@ -1,6 +1,5 @@
 @import "./base/common";
 @import "./utils/variables";
-@import "./utils/normalize";
 @import "./layout/modal";
 @import "./layout/mob-modal";
 @import "./layout/header";
@@ -13,3 +12,4 @@
 @import "./components/nav-portfolio";
 @import "./components/projects-portfolio";
 @import "./components/animation-portfolio";
+@import "./utils/normalize";
